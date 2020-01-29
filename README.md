@@ -2,12 +2,12 @@
 
 Kotlin utilities
 
-..* Extension function stackTrace() for Exceptions
+* Extension function stackTrace() for Exceptions
 ```java
 println(e.stackTrace())
 ```
 
-..* Manage multiple AutoCloseable resources 
+* Manage multiple AutoCloseable resources 
 ```java
 withResources {
   val connection = getConnection().use()
@@ -17,7 +17,7 @@ withResources {
 }
 ```
 
-..* Cloned FTPClient from apache commons net so it is AutoCloseable (override `close()`) and can be automatically managed.
+* Cloned FTPClient from apache commons net so it is AutoCloseable (override `close()`) and can be automatically managed.
 ```java
 withResources {
   val ftp = FTPClient(srcServer, srcPort, srcUser, srcPwd).use()
