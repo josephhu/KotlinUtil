@@ -25,5 +25,10 @@ withResources {
 }
 ```
 
+* Mail Client
+```java
+val mailer = Mailer(smtpHost)
+mailer.sendMail( from, to, cc = null, subject = "Test", "<b>Bold Statement</b>", File("path/to/file"))
+```
 
 
